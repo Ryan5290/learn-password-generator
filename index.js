@@ -3,7 +3,7 @@ const numbers =  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const symbols =  ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 const passwordLength = 15
 
-let characters = Array.from(letters);
+let characters = [];
 
 let passwordOneEl = document.getElementById("password-1")
 let passwordTwoEl = document.getElementById("password-2")
@@ -36,9 +36,16 @@ function buildCharacters() {
     let numEl = document.getElementById("num-el")
     let symEl = document.getElementById("sym-el")
 
+    let tempArr = Array.from(letters)
+
     if (numEl.checked) {
-        characters = characters.concat(numbers);
+        tempArr = tempArr.concat(numbers);
     }
+    if (symEl.checked) {
+        tempArr = tempArr.concat(symbols)
+    }
+
+    characters = Array.from(tempArr)
 }
 
 
