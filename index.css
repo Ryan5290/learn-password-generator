@@ -35,7 +35,7 @@ button {
 }
 
 hr { 
-    margin: 35px 0px 35px auto;
+    margin: 35px auto 35px 0px;
     width: 445px;
     padding: 0;
 }
