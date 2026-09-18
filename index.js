@@ -3,14 +3,12 @@ const numbers =  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const symbols =  ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 const passwordLength = 15
 
-let characters = [];
-
 let passwordOneEl = document.getElementById("password-1")
 let passwordTwoEl = document.getElementById("password-2")
 
 
 function generatePassword() {
-    buildCharacters()
+    let characters = buildCharacters()
     let charsLen = characters.length
     let password = ""
     
@@ -45,7 +43,7 @@ function buildCharacters() {
         tempArr = tempArr.concat(symbols)
     }
 
-    characters = Array.from(tempArr)
+    return tempArr
 }
 
 
