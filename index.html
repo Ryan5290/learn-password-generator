@@ -6,7 +6,16 @@
         <h1>Generate a <br/><span>random password</span></h1>
         <p id="subhead">Never use an insecure password again.</p>
         <button id="gen-btn" onclick="displayPasswords()">Generate passwords</button>
+
+        <div>
+            <input type="checkbox" id="num-el" name="numbers">
+            <label for="numbers">Numbers</label><br>
+            <input type="checkbox" id="sym-el" name="symbols">
+            <label for="symbols">Symbols</label><br>
+        </div>
+
         <hr align="left">
+        
         <div class="pw-container">
             <p id="password-1"></p>
             <p id="password-2"></p>

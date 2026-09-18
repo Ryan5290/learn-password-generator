@@ -26,4 +26,11 @@ function displayPasswords() {
     passwordTwoEl.textContent = passwordTwo
 }
 
+function buildCharacters() {
+    let numEl = document.getElementById("num-el")
+    console.log(numEl)
+}
+
+buildCharacters()
+
 
